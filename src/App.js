@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import MapContainer from './maps';
 
 
-function App() {
+class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { disasters : [] };
+	}
+
+	state ={
+		disasters : [],
+	}
+	
+
+render() {
   return (
 	<div id="App">
 		<aside>
@@ -12,6 +23,7 @@ function App() {
 			<article>
 				<h1>Wuhan Coronacirus Crisis</h1>
 				<p><em>"The global death toll from the Wuhan coronavirus is at least 805, surpassing the number of fatalities from the deadly 2003 SARS outbreak."</em></p>
+				<p className="App-intro">;{this.state.disasters}</p>
 				<span> - CNN</span>
 			</article>
 		</aside>
@@ -21,5 +33,8 @@ function App() {
 	</div>
   );
 }
+}
+
+
 
 export default App;
