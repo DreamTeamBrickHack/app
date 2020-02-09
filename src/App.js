@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MapContainer from './maps';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+	<div id="App">
+		<aside>
+			<span>&nbsp;ALERT</span>
+			<img src="https://cdn.images.express.co.uk/img/dynamic/78/750x445/1230205.jpg" alt="people affected with corona virus"/>
+			<article>
+				<h1>Wuhan Coronacirus Crisis</h1>
+				<p><em>"The global death toll from the Wuhan coronavirus is at least 805, surpassing the number of fatalities from the deadly 2003 SARS outbreak."</em></p>
+				<span> - CNN</span>
+			</article>
+		</aside>
+		<main>
+			<MapContainer/>
+		</main> 
+	</div>
   );
 }
 
