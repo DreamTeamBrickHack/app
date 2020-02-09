@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 #App {
   font-family: 'Dosis', sans-serif;
   display: -ms-grid;
@@ -34,6 +38,12 @@
   background-color: black;
   padding: 0.8rem;
   text-align: right;
+  color: #e70e61;
+}
+
+#App aside span:last-child {
+  color: white;
+  font-weight: 700;
 }
 
 #App aside article {
@@ -58,9 +68,10 @@ img {
 }
 
 main {
+  max-width: 1fr;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  margin: 2rem;
+  margin: 1.3vw;
 }
 /*# sourceMappingURL=App.css.map */

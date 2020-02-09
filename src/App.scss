@@ -7,6 +7,10 @@
     // overflow: hidden;
 }
 
+body{
+    overflow: hidden;
+  }
+
 
 #App{
     font-family: 'Dosis', sans-serif;
@@ -27,6 +31,11 @@
             background-color: black;
             padding: 0.8rem;
             text-align: right;
+            color: rgb(231, 14, 97);
+        }
+        span:last-child{
+            color: white;
+            font-weight: 700;
         }
         article{
             font-family: 'Roboto', sans-serif;
@@ -49,7 +58,8 @@ img{
 }
 
 main{
+    max-width: 1fr;
     grid-column: 2 / 3;
+    margin: 1.3vw;
 
-    margin: 2rem;
 }
